@@ -1,11 +1,12 @@
 import RotatingImage from '../RotatingImage'
 import './App.css'
+import { spanish as strings } from '../../resources/strings'
 
 function App () {
   return (
     <div className='App'>
-      <h1>Holi mi nombre es Elibi</h1>
-      <h2>También me conoceréis como famoso vampiro inventor de los pingüinos:</h2>
+      <h1>{strings.get('main-title')}</h1>
+      <h2>{strings.get('penguin-achievements')}</h2>
       <RotatingImage
         srcList={[process.env.PUBLIC_URL + '/images/emperorpenguin.webp',
           process.env.PUBLIC_URL + '/images/pinguinos2.jpg',
